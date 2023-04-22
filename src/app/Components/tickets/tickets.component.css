@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket{
+    margin: 14px;
+    cursor: pointer;
+}
+
+.card-key{
+    color: #B8B9BC;
+    font-weight: 400;
+}
+
+.card-value{
+    color: #060C1B;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.urgent{
+    background-color:#ff3d001a ;
+    color: #FF3D00;
+}
+
+.low-priority{
+    color: #53D86A;
+    background-color: #D7E5DA;
+}
+
+.greyed-out{
+    background-color: #B8B9BC;
+    color: #ECECED;
+}
+

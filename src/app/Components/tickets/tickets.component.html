@@ -1,0 +1,29 @@
+<div class="cards" *ngFor="let  ticket of ticketsList">
+    <mat-card class="ticket" (click)="sendCoordinates(ticket)">
+        <mat-card-content>
+          <div class="header">
+              <h2>{{ticket.title}}</h2>
+              <mat-chip-list>
+                  <mat-chip [ngClass]="{'urgent': ticket.status === 'uncomplete', 'low-priority' : ticket.status === 'low_risk', 'greyed-out' : ticket.status === 'needs_review' }">
+                      <!-- <svg style="height:5px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg> -->
+                      <span>{{ticket.status}}</span>
+                  </mat-chip>
+              </mat-chip-list>
+          </div>
+          <div class="content">
+              <div class="from-section">
+                  <span class="card-key">From: </span>
+                  <span class="card-value">{{ticket.from}}</span>
+              </div>
+              <div class="to-section">
+                  <span class="card-key">To:</span>
+                  <span class="card-value">{{ticket.to}}</span>
+              </div>
+              <div class="due-date">
+                  <span class="card-key">Due Date:</span>
+                  <span style="color: #FF3D00" class="card-value">{{ticket.dueDate}}</span>
+              </div>
+          </div>
+        </mat-card-content>
+  </mat-card>
+</div>

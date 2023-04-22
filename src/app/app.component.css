@@ -1,0 +1,147 @@
+.search-dropdown {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-form {
+    margin-right: 10px;
+  }
+  
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px 40px 8px 16px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+    background-image: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .fa-search {
+    margin-right: 8px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    width: 160px;
+  }
+  
+  .dropbtn:after {
+    content: "";
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #333 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:focus-within .dropdown-content{
+    display: block;
+  }
+
+  .mat-button-toggle-checked{
+    background: #2188D9;
+    color: white;
+  }
+
+  .utilities {
+    margin-left: 100px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    }
+
+    .options-utilities{
+        display: flex;
+    }  
+  
+    .upper-container {
+        margin: 24px;
+    }
+
+    #datePck{
+        width: 180px;
+    }
+    
+    .mapview{
+      width: 65vw;
+    }
+
+    .lower-container{
+      display: flex;
+    }
+
+    .workflow-list{
+      width: 30vw;
+      height: 80vh;
+    }
+   
+    .download{
+      cursor: pointer;
+    }
